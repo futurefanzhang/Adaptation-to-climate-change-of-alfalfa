@@ -14,7 +14,4 @@
   bcftools view merge.final_filter.bcf > merge.final.bcf.vcf #change bcf to vcf file
   python3 /public/agis/zhouyongfeng_group/zhangfan02/delly_results/filter.py merge.final.bcf.vcf #filter out IMPRECISE and lowQual SV
   vcftools --vcf merge.final.bcf.filter.vcf --max-missing 0.8 --recode --recode-INFO-all --out final_704ind_sv_miss0.2.vcf #filter missing rate of 20%
-  
-
-  
 
