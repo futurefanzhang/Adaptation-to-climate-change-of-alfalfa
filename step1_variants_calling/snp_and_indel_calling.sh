@@ -29,4 +29,4 @@
 	gatk --java-options "-Xmx60g -Xms60g" SelectVariants -select-type INDEL -V merge.vcf -O merge.indel.vcf && gatk VariantFiltration -V merge.indel.vcf -O Indel_filter.vcf --filter-expression "QD<2.0 || FS >200.0 || MQRankSum <- 12.5 || ReadPosRankSum <- 8.0 || SOR >10.0" --filter-name "Fail" && grep -v "Fail" Indel_filter.vcf >Indel_filter_out.vcf
 ##step6 filter SNP and indel
 	vcftools --vcf SNP_filter_out.vcf --max-missing 0.8 --min-meanDP 3 --max-meanDP 62 --min-alleles 2 --max-alleles 2 --recode --recode-INFO-all --out all_population_SNP_filter_missing0.2_meanDP2-50_allele2.vcf
-  vcftools --vcf Indel_filter_out.vcf --max-missing 0.8 --min-meanDP 3 --max-meanDP 62 --min-alleles 2 --max-alleles 2 --recode --recode-INFO-all --out all_population_Indel_filter_missing0.2_meanDP2-50_allele2.vcf
+  	vcftools --vcf Indel_filter_out.vcf --max-missing 0.8 --min-meanDP 3 --max-meanDP 62 --min-alleles 2 --max-alleles 2 --recode --recode-INFO-all --out all_population_Indel_filter_missing0.2_meanDP2-50_allele2.vcf
