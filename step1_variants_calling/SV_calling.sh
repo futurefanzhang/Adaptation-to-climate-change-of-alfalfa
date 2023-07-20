@@ -9,11 +9,11 @@
 ##step4, merge all *.geno.bcf
   bcftools merge -m id -O b -o merge.final.bcf sample1.geno.bcf sample2.geno.bcf sample3.geno.bcf
 ##step5, generate vcf file
-  bcftools index merge.final.bcf #bcf文件建立索引
-  delly filter -f germline -o merge.final_filter.bcf merge.final.bcf #利用软件自身参数过滤bcf文件
-  bcftools view merge.final_filter.bcf > merge.final.bcf.vcf #生成vcf文件
-  python3 /public/agis/zhouyongfeng_group/zhangfan02/delly_results/filter.py merge.final.bcf.vcf #过滤掉标记为IMPRECISE和LowQual的结果
-  vcftools --vcf merge.final.bcf.filter.vcf --max-missing 0.8 --recode --recode-INFO-all --out final_704ind_sv_miss0.2.vcf #过滤缺失值，我后续分析用的这个文件
+  bcftools index merge.final.bcf #build index for bcf file
+  delly filter -f germline -o merge.final_filter.bcf merge.final.bcf #filter bcf file
+  bcftools view merge.final_filter.bcf > merge.final.bcf.vcf #change bcf to vcf file
+  python3 /public/agis/zhouyongfeng_group/zhangfan02/delly_results/filter.py merge.final.bcf.vcf #filter out IMPRECISE and lowQual SV
+  vcftools --vcf merge.final.bcf.filter.vcf --max-missing 0.8 --recode --recode-INFO-all --out final_704ind_sv_miss0.2.vcf #filter missing rate of 20%
   
 
   
