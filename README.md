@@ -10,3 +10,17 @@ freebayes_variants_calling.sh
 SV_calling.sh
 ```
 ### step2, population genetic analysis
+
+This part includes all related content of population genetic-related analysis, including phylogenetic tree, admixture, PCA, and IBD
+```
+phylogenetic tree: phylogenetic_tree.sh, phylogenetic_tree_plot.R, vcf2other.py
+
+```
+### step3, population dynamics analysis
+
+
+### step4, genotype and environmental factors association analysis
+
+
+### step5, genetic offset analysis
+
