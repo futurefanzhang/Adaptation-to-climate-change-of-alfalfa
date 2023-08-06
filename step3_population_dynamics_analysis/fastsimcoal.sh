@@ -7,4 +7,4 @@ python /public/home/zhangtianhao/soft/superSFS/superSFS.py 1 10fastsimcoal_outgr
 python /public/home/zhangtianhao/soft/superSFS/superSFS.py 2 51_sample_group_fastsimcoal.txt merge_51_sample_caerulea_falcata_diploid_outgroup_allele2_meanDP3-62_miss0.2_addid_plink_beagle_reverse.vcf ./count ##function 2, generate count value for fastsimcoal
 
 python 2psfs.py ##change count to SFS file
-/public/home/zhangtianhao/soft/fsc27_linux64/fsc2709 -t QT1.tpl -e QT1.est -d  -n 100000 -L 50 -s 0 -M -c 8 -C 10 -B 40
+/public/home/zhangtianhao/soft/fsc27_linux64/fsc2709 -t QT1.tpl -e QT1.est -d  -n 100000 -L 50 -s 0 -M -c 8 -C 10 -B 40  ##run 100 times to find best model parameters by AIC value, then change QT1.tpl and QT1.est for different models 
