@@ -11,7 +11,7 @@ SV_calling.sh
 ```
 ### step2, population genetic analysis
 
-This part includes all related content of population genetic-related analysis, including phylogenetic tree, admixture, PCA, and IBD
+This part includes all related content of population genetic-related analysis, including phylogenetic tree, admixture, PCA, IBD, introgression
 ```
 phylogenetic tree: phylogenetic_tree.sh, phylogenetic_tree_plot.R, vcf2other.py
 PCA and IBD: PCA_and_IBD.sh, PCA.R, IBD.R
