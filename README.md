@@ -24,7 +24,7 @@ introgression: introgression.sh, F4-ratio.R, introgression_ABBA_R_plot.R
 This part includes all related content of population dynamics analysis, including fastsimcoal, 
 ```
 fastsimcoal: fastsimcoal.sh, 2psfs.py
-
+fst candidate gene analysis: fst_candidate_gene.R, candidate_gene.sh, candidate_gene_filter.R
 
 ```
 
