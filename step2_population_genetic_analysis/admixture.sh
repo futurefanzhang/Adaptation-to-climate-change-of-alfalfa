@@ -4,3 +4,5 @@ plink --bfile m.712.snp.ld --extract m.712.snp.ld.prune.in --out all_712_admixtu
 admixture --cv prunData.ped 2 >>log.txt ##k=2
 admixture --cv prunData.ped 3 >>log.txt ##k=3, same for other k from 4 to 10
 grep "CV error" log.txt ##chick CV error for different k value
+##please use cv error for plot cv-error plot, admixture.R
+##please use *.Q for plot admixture plot, admixture.R
