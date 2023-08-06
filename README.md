@@ -15,6 +15,7 @@ This part includes all related content of population genetic-related analysis, i
 ```
 phylogenetic tree: phylogenetic_tree.sh, phylogenetic_tree_plot.R, vcf2other.py
 PCA and IBD: PCA_and_IBD.sh, PCA.R, IBD.R
+admixture: admixture.sh, admixture.R
 introgression: introgression.sh, F4-ratio.R, introgression_ABBA_R_plot.R
 
 ```
