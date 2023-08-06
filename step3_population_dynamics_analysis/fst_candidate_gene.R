@@ -13,7 +13,7 @@ mydata <-read.table("use_fst_sativa_vs_falcata_tetra_10kb.txt",header=TRUE,sep="
 mydata$ID<-paste(mydata$CHROM,mydata$BIN_START, sep="_")
 mydata1<-mydata[,c(7,1,2,6)]
 colnames(mydata1) <- c("ID","CHR", "BP","Fst")
-add_gene=read.table("candidate_gene_region_new_A17.txt",header = F,sep = "\t")  ##please refer candidate_gene.R
+add_gene=read.table("candidate_gene_region_new_A17.txt",header = F,sep = "\t")  ##please refer candidate_gene.sh
 add_gene$SNP<-paste(add_gene$V1,add_gene$V2, sep="_")
 ##ggplot
 library(dplyr)
