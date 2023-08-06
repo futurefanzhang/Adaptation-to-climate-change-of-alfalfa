@@ -21,6 +21,12 @@ introgression: introgression.sh, F4-ratio.R, introgression_ABBA_R_plot.R
 ```
 ### step3, population dynamics analysis
 
+This part includes all related content of population dynamics analysis, including fastsimcoal, 
+```
+fastsimcoal: fastsimcoal.sh, 2psfs.py
+
+
+```
 
 ### step4, genotype and environmental factors association analysis
 
