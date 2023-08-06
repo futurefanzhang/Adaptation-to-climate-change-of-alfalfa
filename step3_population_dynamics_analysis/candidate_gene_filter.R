@@ -1,12 +1,8 @@
-mydata=read.table("deg.sprot.blast",header = F,sep = "\t")
+
+mydata=read.table("candidate_gene.sprot.blast",header = F,sep = "\t")
 colnames(mydata)=c("qseqid", "sseqid",    "pident",    "length",    "mismatch",    "gapopen",    "qstart",    "qend",    "sstart",    "send",    "evalue",    "bitscore")
-#filter p-value<1e-10, ref:Phylogenomics of the genus Glycine sheds light on polyploid evolution and life-strategy transition
+#filter p-value<1e-10
 mydata=mydata[mydata$evalue<1e-10,]
-#filter similarity >70%
-mydata=mydata[mydata$pident>70,]
-#filter coverage >70%
-mydata["coverage"]=(1-mydata$mismatch/mydata$length)
-mydata=mydata[mydata$coverage>0.7,]
 mydata=mydata[order(mydata$pident,decreasing = TRUE),]
 mydata=mydata[!duplicated(mydata$qseqid),] #remove duplicated gene info
 write.table(mydata,"deg.sprot.blast_use.txt",sep = "\t",quote = F,row.names = F,col.names = F) #export use blast info
