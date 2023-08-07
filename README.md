@@ -33,6 +33,12 @@ nucleotide diversity analysis: nucleotide_diversity.sh
 
 ### step4, genotype and environmental factors association analysis
 
+This part includes all related content of population dynamics analysis, including fastsimcoal, candidate gene analysis, MDS, deleterious variance and nucleotide diversity
+```
+LFMM (latent factor mixed model ) analysis: LFMM_analysis.R, LFMM_results_figure.R, match_indel_position.pl
+PBS (population branch statistic ) analysis: PBS_analysis.R
+
+```
 
 ### step5, genetic offset analysis
 
