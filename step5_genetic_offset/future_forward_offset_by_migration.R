@@ -56,6 +56,9 @@ saveRDS(futClimDatGF,file="futClimDatGF_forward_future_ssp245_2081_2100.rds")
 #transform current climate data with gradient forest model
 present <-list.files(path = "D:\\Population_643\\all_761_info\\local_adaption\\wc2.1_10m_bio\\", pattern = "*.tif$", full.names=TRUE)
 presClim <- stack(present)
+##extract all present bio19 data by the location of future tif file
+present_all_bio19 <- data.frame(long=futClimDatGF$x, lat=futClimDatGF$y,raster::extract(presClim, futClimDatGF[,c("x","y")]),stringsAsFactors=FALSE)
+
 ##extract 7 present bio data by the location of future tif file
 predNames2=c("long","lat",'wc2.1_10m_bio_19','wc2.1_10m_bio_8','wc2.1_10m_bio_9','wc2.1_10m_bio_15','wc2.1_10m_bio_2','wc2.1_10m_bio_17','wc2.1_10m_bio_18')
 pre_clim=present_all_bio19[,predNames2]
