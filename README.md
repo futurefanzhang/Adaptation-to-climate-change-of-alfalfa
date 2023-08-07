@@ -45,6 +45,9 @@ PBS (population branch statistic ) analysis: PBS_analysis.R
 This part includes offset estimation command and plot offset in map
 ```
 step5.1 prepare_maf_matrix.R
-
+step5.2 evaluate_representative_biofactor.R
+step5.3 offset_estimation.R
+step5.4 future_forward_offset_by_migration.R, local_forward_reverse_offset.R
 ```
 
+### if you have any questions, please send email to me: zhangfan06@caas.cn or zfan887@gmail.com
