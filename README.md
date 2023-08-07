@@ -42,3 +42,9 @@ PBS (population branch statistic ) analysis: PBS_analysis.R
 
 ### step5, genetic offset analysis
 
+This part includes offset estimation command and plot offset in map
+```
+step5.1 prepare_maf_matrix.R
+
+```
+
