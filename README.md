@@ -28,6 +28,7 @@ fst candidate gene analysis: fst_candidate_gene.R, candidate_gene.sh, candidate_
 MYB5 gene analysis: MYB5_gene.sh, MYB5_analysis.R, local_manhattan.sh
 MDS analysis: MDS_analysis.R
 Deleterious variance: deleterious_variance.sh, deleterious_variance_figure.R, change_vcf_format_genotype.pl
+nucleotide diversity analysis: nucleotide_diversity.sh
 ```
 
 ### step4, genotype and environmental factors association analysis
